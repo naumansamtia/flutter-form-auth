@@ -123,12 +123,10 @@ class RegistrationPage extends StatelessWidget {
                     onPressed: () {
                       if (_formKey.currentState.validate()) {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => LoginScreen()));
-                        // ScaffoldMessenger.of(context).showSnackBar(
-                        //   const SnackBar(content: Text('Processing Data')),
-                        // );
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LoginScreen()),
+                        );
                       }
                     },
                   ),
